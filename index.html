@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>עידו צבר | לוכד נחשים מוסמך - כל הארץ</title>
+<!-- Google tag (gtag.js) - מעקב המרות Google Ads -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18314495623"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18314495623');
+</script>
+<meta name="description" content="נחש בבית או בחצר? עידו צבר, לוכד נחשים מוסמך מטעם רשות הטבע והגנים, מגיע בכל הארץ ולוכד בבטחה - בלי לפגוע בנחש. זמין 24/7, כולל סופי שבוע וחגים.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312160D'/%3E%3Cpath d='M14 44c6 8 14 8 18 2c4-6-2-10-6-6c-3 3 2 7 6 3c6-6 16-8 22-2' fill='none' stroke='%23E3A83B' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='39' r='2.2' fill='%23C7E36B'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "עידו צבר - לוכד נחשים מוסמך",
+  "description": "לכידה בטוחה של נחשים ושחרור בטבע, ללא פגיעה בנחש. שירות מטעם רשות הטבע והגנים.",
+  "telephone": "+972-58-428-0105",
+  "areaServed": "כל הארץ",
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Heebo:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-deep:#12160D;
+    --bg-panel:#1A2013;
+    --bg-warm:#1E170D;
+    --sand:#C9B896;
+    --sand-light:#F1EBDA;
+    --sage:#7C8F52;
+    --amber:#E3A83B;
+    --venom:#C7E36B;
+    --line:#3A4230;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{
+    scroll-behavior:smooth;
+    background:#12160D;
+    overflow-x:hidden;
+    width:100%;
+  }
+  body{
+    background-color:var(--bg-deep);
+    color:var(--sand-light);
+    font-family:'Heebo',sans-serif;
+    font-weight:300;
+    overflow-x:hidden;
+    width:100%;
+    position:relative;
+  }
+  h1,h2,.display{
+    font-family:'Rubik',sans-serif;
+    font-weight:900;
+  }
+  .eyebrow{
+    font-family:'Heebo',sans-serif;
+    font-weight:500;
+    color:var(--amber);
+    letter-spacing:.04em;
+    font-size:0.95rem;
+  }
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;position:relative;}
+
+  /* signature snake illustration - winds behind the whole page */
+  .trail-svg{
+    position:absolute;
+    top:0; right:50%;
+    width:220%;
+    height:100%;
+    transform:translateX(50%);
+    z-index:0;
+    pointer-events:none;
+    opacity:0.9;
+  }
+
+  /* coiled hero snake - the signature element */
+  .hero-snake{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-46%);
+    width:min(140%, 900px);
+    max-width:none;
+    z-index:1;
+    opacity:0.55;
+    pointer-events:none;
+  }
+  .btn-call.pulse{animation:callglow 2.8s ease-in-out infinite;}
+  @keyframes callglow{
+    0%,100%{box-shadow:0 8px 30px -8px rgba(227,168,59,0.5);}
+    50%{box-shadow:0 8px 42px -6px rgba(227,168,59,0.85);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .btn-call.pulse{animation:none;}
+  }
+
+  header.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    position:relative;
+    padding:48px 0 60px;
+    overflow:hidden;
+    width:100%;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(110,122,76,0.18), transparent 60%),
+      var(--bg-deep);
+  }
+  .hero-inner{position:relative;z-index:2;}
+  .hero h1{
+    font-size:clamp(2.4rem, 7vw, 4.4rem);
+    line-height:1.05;
+    color:var(--sand-light);
+    margin:14px 0 20px;
+    text-shadow:0 4px 24px rgba(0,0,0,0.55);
+  }
+  .hero h1 span{
+    color:var(--venom);
+    text-shadow:0 4px 24px rgba(0,0,0,0.7);
+  }
+  .hero p.lede{
+    font-size:1.15rem;
+    color:var(--sand);
+    max-width:520px;
+    line-height:1.6;
+    margin-bottom:36px;
+  }
+  .cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+  .btn-call{
+    background:var(--amber);
+    color:#1a1400;
+    font-family:'Rubik',sans-serif;
+    font-weight:700;
+    font-size:1.25rem;
+    padding:18px 34px;
+    border-radius:8px;
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    box-shadow:0 8px 30px -8px rgba(217,164,65,0.5), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition:transform .15s ease;
+  }
+  .btn-call .ico{width:22px;height:22px;flex-shrink:0;}
+  .btn-call:hover{transform:translateY(-2px);}
+  .btn-call small{display:block;font-family:'Heebo';font-weight:400;font-size:0.75rem;opacity:0.75;}
+  /* secondary action (WhatsApp / photo-ID) - deliberately less prominent than the call button */
+  .btn-secondary{
+    background:transparent;
+    color:var(--sand-light);
+    border:1.5px solid var(--line);
+    font-family:'Heebo',sans-serif;
+    font-weight:600;
+    font-size:0.95rem;
+    padding:12px 22px;
+    border-radius:8px;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    transition:border-color .15s ease, background .15s ease, transform .15s ease;
+  }
+  .btn-secondary .ico{width:18px;height:18px;flex-shrink:0;color:#3E9B5C;}
+  .btn-secondary:hover{border-color:#3E9B5C;background:rgba(62,155,92,0.08);transform:translateY(-2px);}
+  .btn-secondary small{display:block;font-family:'Heebo';font-weight:400;font-size:0.72rem;opacity:0.7;}
+  .badge-24{
+    font-family:'Heebo',sans-serif;
+    font-weight:500;
+    color:var(--sage);
+    border:1px solid var(--line);
+    padding:10px 18px;
+    border-radius:4px;
+    font-size:0.95rem;
+  }
+
+  section{
+    padding:90px 0;
+    position:relative;
+    background-color:var(--bg-deep);
+  }
+  header.hero{background-color:var(--bg-deep);}
+  footer{background-color:var(--bg-panel);}
+  .panel{background-color:var(--bg-panel);}
+
+  /* section-by-section color variety */
+  .sec-steps{
+    background:
+      radial-gradient(ellipse 70% 45% at 12% 0%, rgba(227,168,59,0.10), transparent 60%),
+      var(--bg-deep);
+  }
+  .sec-philosophy{
+    background:
+      radial-gradient(ellipse 80% 55% at 88% 100%, rgba(124,143,82,0.20), transparent 62%),
+      var(--bg-panel);
+  }
+  .sec-trust{
+    background:
+      radial-gradient(ellipse 75% 45% at 50% 0%, rgba(199,227,107,0.09), transparent 62%),
+      var(--bg-warm);
+  }
+  .sec-id{
+    background:
+      radial-gradient(ellipse 80% 55% at 85% 0%, rgba(199,227,107,0.14), transparent 62%),
+      var(--bg-panel);
+  }
+  footer{
+    background:
+      radial-gradient(ellipse 90% 60% at 50% 100%, rgba(227,168,59,0.12), transparent 65%),
+      var(--bg-panel);
+  }
+
+  .section-head{margin-bottom:48px;position:relative;z-index:2;}
+  .section-head::before{
+    content:"";
+    display:block;
+    width:44px;
+    height:3px;
+    background:var(--amber);
+    margin-bottom:16px;
+  }
+  .section-head h2{
+    font-size:clamp(1.8rem, 4vw, 2.6rem);
+    color:var(--sand-light);
+    margin-top:8px;
+  }
+
+  /* immediate steps - genuinely sequential, numbering justified */
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
+    position:relative;z-index:2;
+  }
+  .step{
+    border-top:2px solid var(--sage);
+    padding-top:18px;
+    transition:transform .2s ease;
+  }
+  .step:hover{transform:translateY(-3px);}
+  .step .num{
+    font-family:'Rubik';font-weight:900;
+    font-size:2.2rem;
+    color:var(--sage);
+    display:block;
+    margin-bottom:8px;
+  }
+  .step h3{font-family:'Heebo';font-weight:600;font-size:1.1rem;margin-bottom:8px;color:var(--sand-light);}
+  .step p{color:var(--sand);font-size:0.95rem;line-height:1.55;}
+
+  .pullquote{
+    position:relative;z-index:2;
+    font-family:'Heebo',sans-serif;
+    font-weight:300;
+    font-size:clamp(1.4rem, 3.2vw, 2rem);
+    line-height:1.5;
+    color:var(--sand-light);
+    border-right:3px solid var(--amber);
+    padding-right:24px;
+    max-width:640px;
+  }
+  .philosophy-text{
+    position:relative;z-index:2;
+    color:var(--sand);
+    line-height:1.8;
+    max-width:640px;
+    margin-top:28px;
+    font-size:1.02rem;
+  }
+  .hashtag{
+    display:inline-block;
+    margin-top:24px;
+    color:var(--sage);
+    font-family:'Rubik';font-weight:700;
+    font-size:0.95rem;
+  }
+
+  .area-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:32px;
+    position:relative;z-index:2;
+  }
+  .area-list{list-style:none;}
+  .area-list li{
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+    color:var(--sand-light);
+    font-size:1.05rem;
+  }
+  .area-note{color:var(--sand);line-height:1.7;font-size:0.98rem;}
+
+  footer{
+    padding:70px 0 50px;
+    text-align:center;
+    position:relative;
+  }
+  footer h2{
+    font-size:clamp(1.8rem,5vw,2.8rem);
+    margin-bottom:20px;
+    color:var(--sand-light);
+  }
+  footer .license{
+    margin-top:40px;
+    color:var(--sand);
+    font-size:0.85rem;
+    opacity:0.7;
+  }
+
+  .sticky-bar{
+    position:fixed;
+    bottom:18px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:50;
+    display:flex;
+    gap:10px;
+  }
+  .sticky-bar a{
+    font-family:'Rubik';font-weight:700;
+    padding:14px 22px;
+    border-radius:100px;
+    box-shadow:0 10px 30px -6px rgba(0,0,0,0.5);
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:0.9rem;
+    white-space:nowrap;
+  }
+  .sticky-bar .ico{width:18px;height:18px;flex-shrink:0;}
+  .sticky-bar .call{background:var(--amber);color:#1a1400;}
+  .sticky-bar .wa{background:#3E9B5C;color:#EDE7D6;}
+
+  @media (max-width:720px){
+    .steps{grid-template-columns:1fr;}
+    .area-grid{grid-template-columns:1fr;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    .btn-call{transition:none;}
+  }
+
+  /* tab navigation - lets visitors switch between sections without scrolling */
+  .tabs-section{
+    position:relative;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124,143,82,0.16), transparent 65%),
+      var(--bg-deep);
+    padding-bottom:8px;
+  }
+  .tabs-nav{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:18px 22px;
+    position:relative;z-index:2;
+    max-width:920px;
+    margin:0 auto;
+    padding:28px 24px 8px;
+  }
+  .tab-btn{
+    font-family:'Heebo',sans-serif;
+    font-weight:600;
+    font-size:0.95rem;
+    color:var(--sand-light);
+    background:rgba(124,143,82,0.16);
+    border:1.5px solid var(--sage);
+    border-radius:999px;
+    padding:12px 20px;
+    cursor:pointer;
+    transition:border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .tab-btn:hover{
+    background:rgba(124,143,82,0.3);
+    box-shadow:0 6px 18px -6px rgba(124,143,82,0.4);
+    transform:translateY(-2px);
+  }
+  .tab-btn.active{
+    color:#1a1400;
+    background:var(--amber);
+    border-color:var(--amber);
+    box-shadow:0 6px 18px -6px rgba(227,168,59,0.5);
+  }
+  /* scattered, hand-placed feel instead of a neat straight row */
+
+  .tabs-empty{
+    position:relative;z-index:2;
+    max-width:920px;
+    margin:0 auto;
+    padding:20px 24px 44px;
+    color:var(--sand);
+    font-size:0.95rem;
+  }
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block;}
+  header.hero.tab-panel{display:none;}
+  header.hero.tab-panel.active{display:flex;}
+  @media (max-width:600px){
+    .tabs-nav{gap:10px;padding:22px 16px 6px;}
+    .tab-btn{padding:11px 16px;font-size:0.85rem;}
+  }
+
+  /* call-reminder popup */
+  .call-popup-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1000;
+    padding:20px;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .25s ease;
+  }
+  .call-popup-overlay.show{opacity:1;pointer-events:auto;}
+  .call-popup{
+    background:var(--bg-panel);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:32px 28px;
+    max-width:360px;
+    width:100%;
+    text-align:center;
+    position:relative;
+    box-shadow:0 20px 60px -10px rgba(0,0,0,0.6);
+  }
+  .call-popup h3{
+    font-family:'Rubik',sans-serif;
+    font-weight:900;
+    font-size:1.3rem;
+    color:var(--sand-light);
+    margin-bottom:20px;
+    line-height:1.4;
+  }
+  .call-popup .btn-call{width:100%;justify-content:center;font-size:1.1rem;}
+  .call-popup-close{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:transparent;
+    border:none;
+    color:var(--sand);
+    font-size:1.4rem;
+    line-height:1;
+    cursor:pointer;
+    padding:6px;
+  }
+  .call-popup-close:hover{color:var(--sand-light);}
+</style>
+</head>
+<body>
+
+<header class="hero tab-panel active" id="tab-home">
+  <svg class="trail-svg" viewBox="0 0 400 900" preserveAspectRatio="none">
+    <path d="M 60 0 C 180 90, 20 180, 140 260 C 260 340, 40 420, 160 520 C 280 600, 60 700, 180 800 C 260 860, 140 900, 200 900"
+      stroke="#7C8F52" stroke-width="2" fill="none" opacity="0.5"/>
+    <path d="M 60 0 C 180 90, 20 180, 140 260 C 260 340, 40 420, 160 520 C 280 600, 60 700, 180 800 C 260 860, 140 900, 200 900"
+      stroke="#7C8F52" stroke-width="7" fill="none" opacity="0.08" stroke-dasharray="2 14" stroke-linecap="round"/>
+  </svg>
+  <svg class="hero-snake" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <linearGradient id="snakeBody" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#7C8F52"/>
+        <stop offset="100%" stop-color="#3A4426"/>
+      </linearGradient>
+    </defs>
+    <path d="M40 380 C 160 460, 260 460, 300 360 C 340 260, 220 220, 200 320 C 185 390, 260 400, 300 340 C 380 220, 520 180, 600 240 C 680 300, 700 200, 660 140 C 630 100, 580 110, 560 150"
+      fill="none" stroke="url(#snakeBody)" stroke-width="34" stroke-linecap="round" opacity="0.5"/>
+    <path d="M40 380 C 160 460, 260 460, 300 360 C 340 260, 220 220, 200 320 C 185 390, 260 400, 300 340 C 380 220, 520 180, 600 240 C 680 300, 700 200, 660 140 C 630 100, 580 110, 560 150"
+      fill="none" stroke="#0F120B" stroke-width="34" stroke-linecap="round" opacity="0.5" stroke-dasharray="1 16"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:18px;"><img src="data:image/webp;base64,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" alt="עידו צבר - לוכד נחשים מוסמך" width="64" height="64" decoding="async" style="width:64px;height:64px;border-radius:50%;display:block;"><div><div style="font-family:'Rubik';font-weight:900;font-size:1.3rem;color:var(--sand-light);">עידו צבר</div><div class="eyebrow" style="font-size:0.8rem;">לוכד נחשים מוסמך</div></div></div>
+    <div class="eyebrow">שירות לכידת נחשים · כל הארץ · 24/7</div>
+    <h1>נחש בבית?<br><span>התקשר ללוכד מוסמך.</span></h1>
+    <p class="lede">עידו צבר, לוכד נחשים מוסמך מטעם רשות הטבע והגנים, נותן שירות בכל הארץ. <br>לכידה בטוחה ושחרור בטבע, בלי לפגוע בנחש.</p>
+    <div class="cta-row">
+      <a class="btn-call pulse" href="tel:0584280105">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        058-428-0105
+        <small>זמין עכשיו</small>
+      </a>
+      <a class="btn-secondary" href="https://wa.me/972584280105?text=%D7%94%D7%99%2C%20%D7%9E%D7%A6%D7%A8%D7%A3%20%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20%D7%94%D7%A0%D7%97%D7%A9%20%D7%9C%D7%96%D7%99%D7%94%D7%95%D7%99">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        זיהוי חינם בתמונה
+        <small>שלחו תמונה בוואטסאפ</small>
+      </a>
+      <span class="badge-24">מענה 24 שעות ביממה</span>
+    </div>
+  </div>
+</header>
+
+<div class="tabs-section" id="tabsSection">
+
+<section class="sec-steps tab-panel" id="tab-path">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">לפני שאני מגיע</div>
+      <h2>מה עושים ברגע שראיתם נחש</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="num">01</span>
+        <h3>שמרו מרחק</h3>
+        <p>אל תתקרבו, אל תיגעו ואל תנסו להזיז אותו. אם לא תפריעו לנחש, כמעט אין סיכוי שהוא יכיש.</p>
+      </div>
+      <div class="step">
+        <span class="num">02</span>
+        <h3>שמרו קשר עין</h3>
+        <p>נסו לעקוב מרחוק אחרי הנחש ולשמור איתו קשר עין עד שאני מגיע - זה עוזר לי לאתר אותו מהר. תוך כדי, הרחיקו ילדים וחיות מחמד מהאזור.</p>
+      </div>
+      <div class="step">
+        <span class="num">03</span>
+        <h3>שלחו תמונה ומיקום</h3>
+        <p>אם אפשר, שלחו לי תמונה של הנחש והמיקום המדויק - זה עוזר לי לדעת מראש איזה ציוד להביא כדי ללכוד אותו.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="panel sec-philosophy tab-panel" id="tab-phil">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">העקרון שלי</div>
+      <h2>לכידה ללא פגיעה, ושחרור בטבע</h2>
+    </div>
+    <p class="philosophy-text">
+      נחש בבית או בחצר הוא לא סיבה לפאניקה. אני מגיע, מזהה את המין, לוכד אותו בשיטה בטוחה גם לנחש וגם לבני הבית, ומשחרר אותו בבית גידול מתאים הרחק מאזורי מגורים. רוב הנחשים בישראל אינם מסוכנים, וכולם ממלאים תפקיד חשוב באיזון האקולוגי.
+    </p>
+    <span class="hashtag">#לאהורגיםנחשים</span>
+  </div>
+</section>
+
+<section class="sec-trust tab-panel" id="tab-trust">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">חשוב לדעת</div>
+      <h2>למה להזמין דווקא לוכד מוסמך</h2>
+    </div>
+    <div class="area-grid">
+      <ul class="area-list">
+        <li>נחשים הם בעלי חיים מוגנים בישראל - פגיעה או הריגה מהוות עבירה פלילית</li>
+        <li>לוכד מוסמך עובד עם היתר מרשות הטבע והגנים ויודע לזהות את המין בבטחה</li>
+        <li>הטיפול כולל גם בדיקה שאין נחשים נוספים בסביבה, לא רק לכידה בודדת</li>
+      </ul>
+      <p class="area-note">ניסיון עצמאי ללכוד או להרוג נחש עלול להוביל להכשה. ברוב המקרים, הנחש יעדיף להימלט ולהתרחק אם לא מתקרבים אליו ומשאירים לו מרחב.</p>
+    </div>
+  </div>
+</section>
+
+<section class="panel sec-id tab-panel" id="tab-viper">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">שירות חינמי</div>
+      <h2>לא בטוחים איזה נחש זה? שלחו תמונה</h2>
+    </div>
+    <p class="philosophy-text" style="position:relative;z-index:2;">
+      אפשר לצלם את הנחש ממרחק בטוח ולשלוח לי את התמונה בוואטסאפ - אני מזהה את המין ואומר לכם אם צריך להיזהר עד שאגיע, בלי עלות ובלי התחייבות.
+    </p>
+    <div class="cta-row" style="margin-top:28px;">
+      <a class="btn-call" style="background:#3E9B5C;color:#EDE7D6;box-shadow:0 8px 30px -8px rgba(62,155,92,0.5), inset 0 1px 0 rgba(255,255,255,0.25);" href="https://wa.me/972584280105?text=%D7%94%D7%99%2C%20%D7%9E%D7%A6%D7%A8%D7%A3%20%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20%D7%94%D7%A0%D7%97%D7%A9%20%D7%9C%D7%96%D7%99%D7%94%D7%95%D7%99">
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        שליחת תמונה לזיהוי
+        <small>מענה מהיר, ללא עלות</small>
+      </a>
+    </div>
+  </div>
+</section>
+
+</div>
+<div class="tabs-section">
+<nav class="tabs-nav">
+  <button class="tab-btn active" data-tab="home" type="button">נחש בבית או בחצר?</button>
+  <button class="tab-btn" data-tab="path" type="button">אני בדרך</button>
+  <button class="tab-btn" data-tab="phil" type="button">#לאהורגיםנחשים</button>
+  <button class="tab-btn" data-tab="trust" type="button">לוכד מוסמך</button>
+  <button class="tab-btn" data-tab="viper" type="button">איך לדעת אם הנחש ארסי</button>
+</nav>
+<p class="tabs-empty">בחרו נושא כדי לקרוא עוד 👆</p>
+</div>
+
+<footer class="panel">
+  <div class="wrap">
+    <h2>נחש בבית? אני בדרך.</h2>
+    <a class="btn-call pulse" href="tel:0584280105">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      058-428-0105
+    </a>
+    <p class="license">עידו צבר — לוכד נחשים מוסמך מטעם רשות הטבע והגנים · כל הארץ</p>
+  </div>
+</footer>
+
+<div class="sticky-bar">
+  <a class="call" href="tel:0584280105">
+    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    התקשר
+  </a>
+  <a class="wa wa-lead" href="https://wa.me/972584280105?text=%D7%94%D7%99%2C%20%D7%99%D7%A9%20%D7%9C%D7%99%20%D7%A0%D7%97%D7%A9%20%D7%91%D7%91%D7%99%D7%AA%2F%D7%97%D7%A6%D7%A8">
+    <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+    וואטסאפ
+  </a>
+</div>
+
+<div class="call-popup-overlay" id="callPopup">
+  <div class="call-popup">
+    <button class="call-popup-close" id="callPopupClose" type="button" aria-label="סגור">&times;</button>
+    <h3>נחש בבית או בחצר?<br>התקשר עכשיו</h3>
+    <a class="btn-call pulse" href="tel:0584280105">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      058-428-0105
+    </a>
+  </div>
+</div>
+
+<script>
+  (function(){
+    const buttons = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
+    const popup = document.getElementById('callPopup');
+    const popupClose = document.getElementById('callPopupClose');
+    let popupShown = false; // fires once per visit
+
+    function openPopup(){
+      popup.classList.add('show');
+    }
+    function closePopup(){
+      popup.classList.remove('show');
+    }
+    popupClose.addEventListener('click', closePopup);
+    popup.addEventListener('click', (e)=>{
+      if(e.target === popup) closePopup();
+    });
+
+    function activateTab(tabName, fromHash){
+      const btn = document.querySelector('.tab-btn[data-tab="'+tabName+'"]');
+      const panel = document.getElementById('tab-'+tabName);
+      if(!btn || !panel) return;
+      buttons.forEach(b=>b.classList.remove('active'));
+      panels.forEach(p=>p.classList.remove('active'));
+      btn.classList.add('active');
+      panel.classList.add('active');
+      window.scrollTo({top:0, behavior:'smooth'});
+
+      if(!fromHash){
+        if(tabName === 'home'){
+          try{ history.replaceState(null, '', window.location.pathname + window.location.search); }catch(e){}
+        } else {
+          try{ history.replaceState(null, '', '#'+tabName); }catch(e){}
+        }
+      }
+
+      if(tabName !== 'home' && !popupShown){
+        popupShown = true;
+        setTimeout(openPopup, 3000);
+      }
+    }
+
+    buttons.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        try{
+          activateTab(btn.dataset.tab, false);
+        }catch(e){
+          console.error('tab switch error', e);
+        }
+      });
+    });
+
+    // open the matching tab automatically if the URL has one (e.g. #path) - useful for Google Ads sitelinks
+    const initialTab = window.location.hash.replace('#','');
+    if(initialTab){
+      activateTab(initialTab, true);
+    }
+
+    // --- מעקב המרות Google Ads ---
+    // החלף את שתי התוויות למטה בתוויות ההמרה שלך מ-Google Ads (Tools > Conversions)
+    const CALL_CONVERSION_LABEL = 'XYAzCN_y0N4cEIeNhJ1E'; // תווית ההמרה ללחיצה על "התקשר"
+    const WA_CONVERSION_LABEL = 'dzx7COLy0N4cEIeNhJ1E';   // תווית ההמרה ללחיצה על וואטסאפ "יש לי נחש בבית/בחצר"
+
+    function trackConversionThenGo(url, label){
+      if(typeof gtag !== 'function'){ window.location = url; return false; }
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18314495623/' + label,
+        'event_callback': function(){ window.location = url; },
+        'event_timeout': 2000
+      });
+      setTimeout(function(){ window.location = url; }, 2000); // גיבוי אם ה-callback לא נורה
+      return false;
+    }
+
+    document.querySelectorAll('a[href^="tel:"]').forEach(function(link){
+      link.addEventListener('click', function(e){
+        e.preventDefault();
+        trackConversionThenGo(link.href, CALL_CONVERSION_LABEL);
+      });
+    });
+
+    document.querySelectorAll('a.wa-lead').forEach(function(link){
+      link.addEventListener('click', function(e){
+        e.preventDefault();
+        trackConversionThenGo(link.href, WA_CONVERSION_LABEL);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
